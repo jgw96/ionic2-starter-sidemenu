@@ -1,6 +1,6 @@
-import {Component} from '@angular/core';
-import {NavController} from 'ionic-angular';
-import {SelectedFactPage} from '../selected-fact-page/selected-fact-page';
+import { Component } from '@angular/core';
+import { NavController } from 'ionic-angular';
+import { SelectedFactPage } from '../selected-fact-page/selected-fact-page';
 
 @Component({
   templateUrl: 'build/pages/scientific-facts-page/scientific-facts-page.html'
@@ -9,7 +9,7 @@ export class ScientificFactsPage {
 
   private facts: string[];
   
-  constructor(private _navController: NavController) {
+  constructor(private navController: NavController) {
   }
 
   ionViewWillEnter(){
@@ -23,6 +23,6 @@ export class ScientificFactsPage {
   }
 
   selectFact(fact){
-    this._navController.push(SelectedFactPage, {selectedFact: fact})
+    this.navController.push(SelectedFactPage, {selectedFact: fact})
   }
 }
