@@ -1,8 +1,8 @@
-import {Component, ViewChild} from '@angular/core';
-import {ionicBootstrap, Platform} from 'ionic-angular';
-import {StatusBar} from 'ionic-native';
-import {GettingStartedPage} from './pages/getting-started/getting-started';
-import {ListPage} from './pages/list/list';
+import { Component, ViewChild } from '@angular/core';
+import { ionicBootstrap, Platform } from 'ionic-angular';
+import { StatusBar } from 'ionic-native';
+import { GettingStartedPage } from './pages/getting-started/getting-started';
+import { ListPage } from './pages/list/list';
 
 
 @Component({
